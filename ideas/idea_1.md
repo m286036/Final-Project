@@ -1,9 +1,9 @@
 government electric vehicles/ alternative energy sources
 
 columns from usaspending csv: recovered_materials_sustainability
-ideas 1
+
+
+
 columns from electricityYearly.csv: YoY % change
 
-**Policy Question/Novel Conclusion:** Does government spending on certain alternative "clean" energy sources (i.e. EVs and clean energy infrastructure like solar panels, wind farms, etc) actually
-reduce emissions or fuel consumption at state level? 
-    An example conclusion could be that the emissions is actually not reduced, leading us to examine whether individual state are preventing the effort
+Policy Question/Conclusion: Does government funding towards alternative energy pay off/do states really use more alternative energy when the government funds it more? Example conclusion: The more the government funds alternative energy does not necessarily correlate with the implementation of these energy sources.
