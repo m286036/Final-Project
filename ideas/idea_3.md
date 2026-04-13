@@ -1,3 +1,5 @@
 Examine over time spending on alternative Nicotine patches.
 
-big governement contractors
+columns from usaspending csv: Product or Service code. - Drugs or biologicals
+
+columns from 
