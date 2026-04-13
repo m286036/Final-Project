@@ -2,7 +2,8 @@ Examine over time spending on alternative Nicotine patches.
 
 columns from usaspending csv: Product or Service code. - Drugs or biologicals
 
-columns from health.csv 18-25 95% CI (Lower)    18-25 95% CI (Upper)
+columns from health.csv: 18-25 Estimate	18-25 95% CI (Lower)	18-25 95% CI (Upper)
 
-**Policy Question/Novel Conclusion:** Has increased federal spending on cigarette replacements reduced smoking? 
-    An example conclusion could be spending has little measurable impact or spending might only work on certain demographics (ex. nicotine patch programs are only more effective for higher-income groups)
+
+Policy Question/Conclusion: Does the spending on Nicotine by the federal government affect state
+nicotine consumption for 18-25 year olds (most likely to be military/use nicotine?) Example conclusion: More spending on Nicotine patches/zyns leads to increased nicotine addiction.
