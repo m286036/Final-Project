@@ -1,12 +1,14 @@
 import pandas as pd
 
 
-energy=pd.read_csv("raw/electricityYearly.csv")
-usa=pd.read_csv("raw/primeContracts.csv")
-seds = pd.read_csv("raw/seds.csv", low_memory=False)
+energy=pd.read_csv("Final-Project/raw/electricityYearly.csv")
+usa=pd.read_csv("Final-Poject/raw/primeContracts.csv")
+seds = pd.read_csv("Final-Project/raw/seds.csv", low_memory=False)
 
 
-
+##I dont know about you guys but I cannot figure out how to make these csvs show up in my terminal.
+###It may require Pathlib, but I would ask Dr Roche during class how to make it so we can see these csvs, if I can't
+##figure it out on the bus
 
 
 usa = usa[(usa["awarding_agency_name"].str.contains("Department of Energy", case=False, na=False)) |(usa["funding_agency_name"].str.contains("Department of Energy", case=False, na=False))]
@@ -23,4 +25,7 @@ grouped_usa_df = usa.groupby(["state_code", "state", "year"], as_index=False)["d
 
 
 
-renew = electric[(electric["Category"] == "Electricity generation") &(electric["Variable"] == "Renewables") &(electric["Unit"] == "GWh")]
+renew = energy[(energy["Category"] == "Electricity generation") &(energy["Variable"] == "Renewables") &(energy["Unit"] == "GWh")]
+
+print(grouped_usa_df)
+print(renew)
