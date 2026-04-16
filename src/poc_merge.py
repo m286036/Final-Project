@@ -1,8 +1,8 @@
 import pandas as pd
 
 
-energy=pd.read_csv("electricityYearly.csv")
-usa=pd.read_csv("primeContracts.csv")
+energy=pd.read_csv("raw/electricityYearly.csv")
+usa=pd.read_csv("raw/primeContracts.csv")
 seds = pd.read_csv("raw/seds.csv", low_memory=False)
 
 
