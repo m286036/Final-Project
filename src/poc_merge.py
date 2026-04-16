@@ -4,16 +4,12 @@ import pandas as pd
 energy=pd.read_csv("electricityYearly.csv")
 usa=pd.read_csv("primeContracts.csv")
 seds = pd.read_csv("raw/seds.csv", low_memory=False)
-"""doe=doe[doe['awarding_agency_name'=="Deparment of Energy"]]
-doe=doe[doe['funding_agency_name'=="Deparment of Energy"]]
-"""
-# read in the three data files we are using
-prime = pd.read_csv("primeContracts.csv", low_memory=False)
-electric = pd.read_csv("raw/electricityYearly.csv", low_memory=False)
 
 
 
-usa = usa[(prime["awarding_agency_name"].str.contains("Department of Energy", case=False, na=False)) |(usa["funding_agency_name"].str.contains("Department of Energy", case=False, na=False))]
+
+
+usa = usa[(usa["awarding_agency_name"].str.contains("Department of Energy", case=False, na=False)) |(usa["funding_agency_name"].str.contains("Department of Energy", case=False, na=False))]
 ##gemini gave us these functions to filter down the rows and columns in the usa dataset that we need.
 usa = usa[["action_date_fiscal_year","federal_action_obligation","primary_place_of_performance_state_code","primary_place_of_performance_state_name"]]
 
