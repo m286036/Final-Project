@@ -52,8 +52,16 @@ elecYrly['StateCode'] = elecYrly['StateCode'].str.strip()
 seds['StateCode'] = seds['StateCode'].str.strip()
 
 
+
+# Restrict dataframes to common year ranges
+filteredBigDf = filteredBigDf[filteredBigDf["Year"] <= 2023]
+elecYrly = elecYrly[elecYrly["Year"] <= 2023]
+seds = seds[seds["Year"] <= 2023]
+
+
+
 # Merge all dfs
-merged1 = pd.merge(filteredBigDf, elecYrly, on=["StateCode", "Year"])
-finalMerged = pd.merge(merged1, seds, on=["StateCode", "Year"])
+merged1 = pd.merge(filteredBigDf, elecYrly, on=["StateCode", "Year"], how="left")
+finalMerged = pd.merge(merged1, seds, on=["StateCode", "Year"], how="left")
 
 print(finalMerged)
