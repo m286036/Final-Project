@@ -55,7 +55,7 @@ elecYrly = elecYrly.rename(columns = {"State code": "StateCode"})
 
 
 
-# Make sure all state codes don't have extra spaces and year entries are integers
+# Make sure all state codes don't have extra spaces and year entries are integers; used Gemini Gem to learn how to use .astype
 filteredBigDf['Year'] = filteredBigDf['Year'].astype(int)
 elecYrly['Year'] = elecYrly['Year'].astype(int)
 seds['Year'] = seds['Year'].astype(int)
