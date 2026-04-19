@@ -76,4 +76,6 @@ seds = seds[seds["Year"] <= 2023]
 merged1 = pd.merge(filteredBigDf, elecYrly, on=["StateCode", "Year"], how="left")
 finalMerged = pd.merge(merged1, seds, on=["StateCode", "Year"], how="left")
 
+
+
 print(finalMerged)
