@@ -1,0 +1,1 @@
+mkdir -p data/clean && pixi run python src/poc_merge.py

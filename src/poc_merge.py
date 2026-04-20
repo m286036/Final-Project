@@ -3,12 +3,12 @@ import pandas as pd
 
 
 # Combine all of the FY csv into one
-files = ["../data/raw/FY2014.csv", "../data/raw/FY2015.csv", "../data/raw/FY2016.csv", "../data/raw/FY2017.csv", "../data/raw/FY2018.csv", "../data/raw/FY2019.csv", "../data/raw/FY2020.csv", "../data/raw/FY2021.csv", "../data/raw/FY2022.csv", "../data/raw/FY2023.csv"]
+files = ["data/raw/FY2014.csv", "data/raw/FY2015.csv", "data/raw/FY2016.csv", "data/raw/FY2017.csv", "data/raw/FY2018.csv", "data/raw/FY2019.csv", "data/raw/FY2020.csv", "data/raw/FY2021.csv", "data/raw/FY2022.csv", "data/raw/FY2023.csv"]
 bigDf= pd.concat([pd.read_csv(f) for f in files], ignore_index=True) # Used Gemini Gem for help using pd.concat for files in the same folder
 # Read in the rest of the files
-elecYrly = pd.read_csv("../data/raw/electricityYearly.csv")
-seds = pd.read_csv("../data/raw/seds.csv")
-sedCodes = pd.read_csv("../data/raw/sedCodes.csv")
+elecYrly = pd.read_csv("data/raw/electricityYearly.csv")
+seds = pd.read_csv("data/raw/seds.csv")
+sedCodes = pd.read_csv("data/raw/sedCodes.csv")
 
 
 
