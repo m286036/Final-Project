@@ -1,1 +1,1 @@
-this project requires pandas and plotly to run correctly
+this project requires pandas and plotly (including plotly.express and plotly.colors) to run correctly
