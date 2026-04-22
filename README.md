@@ -8,3 +8,5 @@ Based on the data, Our final policy recommendation is to set a baseline funding 
 Rather than fluctuating what funding each state receieves for renewable energy, provide consistent,
 steading funding to each states, given out proportionately based on their need/output, to ensure that
 they can continue to output alternative energy at a level that is comparable to the highest years that they have seen success. 
+
+slideshow link: https://docs.google.com/presentation/d/1yBrQEAdVDR4fVjvTavjmeqX9MfLRWItUSoJ5vXq-GF4/edit?slide=id.p#slide=id.p 
